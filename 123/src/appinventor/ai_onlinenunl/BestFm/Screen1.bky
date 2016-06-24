@@ -1,0 +1,93 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="1" x="-469" y="-236">
+    <mutation component_type="Button" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="2" inline="false">
+        <mutation component_type="Player" set_or_get="set" property_name="Source" is_generic="false" instance_name="Player1"></mutation>
+        <field name="COMPONENT_SELECTOR">Player1</field>
+        <field name="PROP">Source</field>
+        <value name="VALUE">
+          <block type="text" id="3">
+            <field name="TEXT">http://s8.myradiostream.com:14124</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="4">
+            <mutation component_type="Player" method_name="Start" is_generic="false" instance_name="Player1"></mutation>
+            <field name="COMPONENT_SELECTOR">Player1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="5" x="-462" y="-120">
+    <mutation component_type="Button" instance_name="Button3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button3</field>
+    <statement name="DO">
+      <block type="component_method" id="6">
+        <mutation component_type="Player" method_name="Pause" is_generic="false" instance_name="Player1"></mutation>
+        <field name="COMPONENT_SELECTOR">Player1</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="7" x="-466" y="-19">
+    <mutation component_type="Button" instance_name="Button2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button2</field>
+    <statement name="DO">
+      <block type="component_method" id="8">
+        <mutation component_type="Player" method_name="Stop" is_generic="false" instance_name="Player1"></mutation>
+        <field name="COMPONENT_SELECTOR">Player1</field>
+        <next>
+          <block type="controls_closeApplication" id="9"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="10" x="-459" y="90">
+    <mutation component_type="Button" instance_name="Button4" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button4</field>
+    <statement name="DO">
+      <block type="component_method" id="11" inline="false">
+        <mutation component_type="WebViewer" method_name="GoToUrl" is_generic="false" instance_name="WebViewer1"></mutation>
+        <field name="COMPONENT_SELECTOR">WebViewer1</field>
+        <value name="ARG0">
+          <block type="text" id="12">
+            <field name="TEXT">http://www.bestfm.nl</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="13" x="-450" y="213">
+    <mutation component_type="Button" instance_name="Button5" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button5</field>
+    <statement name="DO">
+      <block type="component_method" id="14" inline="false">
+        <mutation component_type="WebViewer" method_name="GoToUrl" is_generic="false" instance_name="WebViewer1"></mutation>
+        <field name="COMPONENT_SELECTOR">WebViewer1</field>
+        <value name="ARG0">
+          <block type="text" id="15">
+            <field name="TEXT">http://chat.myradiostream.com/s8p14124</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="16" x="-450" y="317">
+    <mutation component_type="Button" instance_name="Button6" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button6</field>
+    <statement name="DO">
+      <block type="component_method" id="17" inline="false">
+        <mutation component_type="WebViewer" method_name="GoToUrl" is_generic="false" instance_name="WebViewer1"></mutation>
+        <field name="COMPONENT_SELECTOR">WebViewer1</field>
+        <value name="ARG0">
+          <block type="text" id="18">
+            <field name="TEXT">http://www.bestfm.nl/online</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="157" language-version="20"></yacodeblocks>
+</xml>
